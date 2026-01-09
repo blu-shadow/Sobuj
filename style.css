@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #383c44;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#game-board {
+    border: 5px solid #61dafb; /* Tron-style border */
+    background-color: #1a1a1a;
+    display: block;
+    margin: 15px auto;
+}
+
+#score {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #a9f0d1;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 1.2em;
+    height: 20px;
+    color: #ff6b6b;
+}
+
+/* Mobile Controls Styling */
+#controls {
+    display: none; /* Hidden by default, shown for mobile/small screens */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    user-select: none; /* Prevent text selection on tap */
+}
+
+#controls .row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+#controls button {
+    padding: 15px 25px;
+    font-size: 1.5em;
+    background-color: #61dafb;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    touch-action: manipulation; /* Improves touch responsiveness */
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Show controls for smaller screens */
+@media (max-width: 600px) {
+    #controls {
+        display: flex;
+    }
+}
